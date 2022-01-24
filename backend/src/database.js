@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 //mongoose.connect('mongodb://localhost/angular-auth', { //
-mongoose.connect('mongodb+srv://alexander:aleksson@cluster0.acuz9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(process.env.CONNECTION_STR, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
