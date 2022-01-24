@@ -1,4 +1,4 @@
 frontend2
 /frontend2
 /backend/.env
-backend/env
+*/.env
